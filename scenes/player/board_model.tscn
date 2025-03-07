@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://mq0h5aslmufb"]
+
+[ext_resource type="PackedScene" uid="uid://dfsr7cj8d77kj" path="res://assets/models/player/board.blend" id="1_bwydd"]
+
+[node name="board" instance=ExtResource("1_bwydd")]

@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://cx4mnxntgxv0l"]
+
+[ext_resource type="PackedScene" uid="uid://d0sx8phttlh8w" path="res://scenes/player/board.tscn" id="1_alvft"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_i7k67"]
+sky_top_color = Color(0.792441, 0.830283, 0.883143, 1)
+sky_horizon_color = Color(0.725685, 0.733851, 0.746747, 1)
+
+[sub_resource type="Sky" id="Sky_ukcpi"]
+sky_material = SubResource("ProceduralSkyMaterial_i7k67")
+
+[sub_resource type="Environment" id="Environment_u1lht"]
+background_mode = 2
+sky = SubResource("Sky_ukcpi")
+
+[node name="test" type="Node"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+size = Vector3(100, 0.08, 100)
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("1_alvft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.262624, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_u1lht")
