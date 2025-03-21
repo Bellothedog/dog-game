@@ -1,0 +1,83 @@
+[gd_scene load_steps=21 format=3 uid="uid://ch0u5gak8da8w"]
+
+[ext_resource type="PackedScene" uid="uid://2swf0jwtcd60" path="res://assets/models/kenney/bowl-corner-inner.glb" id="1_bx7mh"]
+[ext_resource type="PackedScene" uid="uid://dr1bi32y8h6ck" path="res://assets/models/kenney/bowl-corner-outer.glb" id="2_popbr"]
+[ext_resource type="PackedScene" uid="uid://cbrp5i4e1nv0u" path="res://assets/models/kenney/bowl-side.glb" id="3_uwb15"]
+[ext_resource type="PackedScene" uid="uid://o2mllwtatjob" path="res://assets/models/kenney/character-skate-boy.glb" id="4_sgwvy"]
+[ext_resource type="PackedScene" uid="uid://cddrfy7g28bel" path="res://assets/models/kenney/character-skate-girl.glb" id="5_20vd5"]
+[ext_resource type="PackedScene" uid="uid://cuvaf47cfxv12" path="res://assets/models/kenney/floor-concrete.glb" id="6_uf8jr"]
+[ext_resource type="PackedScene" uid="uid://dpurkddnlclr1" path="res://assets/models/kenney/floor-wood.glb" id="7_8yk8u"]
+[ext_resource type="PackedScene" uid="uid://siwdol652as8" path="res://assets/models/kenney/half-pipe.glb" id="8_hsuuy"]
+[ext_resource type="PackedScene" uid="uid://dh6tmvxi7w6c1" path="res://assets/models/kenney/obstacle-box.glb" id="9_b0mgt"]
+[ext_resource type="PackedScene" uid="uid://cfjllv3eavlw2" path="res://assets/models/kenney/obstacle-end.glb" id="10_37v85"]
+[ext_resource type="PackedScene" uid="uid://2wldknsn6g2r" path="res://assets/models/kenney/obstacle-middle.glb" id="11_asj4f"]
+[ext_resource type="PackedScene" uid="uid://dcbo1y4iqib22" path="res://assets/models/kenney/pallet.glb" id="12_vt3d8"]
+[ext_resource type="PackedScene" uid="uid://bfcx8v743j0g0" path="res://assets/models/kenney/rail-curve.glb" id="13_4ucsj"]
+[ext_resource type="PackedScene" uid="uid://crt2jahybn3a0" path="res://assets/models/kenney/rail-high.glb" id="14_cnfnv"]
+[ext_resource type="PackedScene" uid="uid://b0xpv0q3a1hw4" path="res://assets/models/kenney/rail-low.glb" id="15_rywki"]
+[ext_resource type="PackedScene" uid="uid://dkitssnlm8avw" path="res://assets/models/kenney/rail-slope.glb" id="16_0sqft"]
+[ext_resource type="PackedScene" uid="uid://bf6f5iscrip7l" path="res://assets/models/kenney/skateboard.glb" id="17_q1dxe"]
+[ext_resource type="PackedScene" uid="uid://dasbhpkaii8dg" path="res://assets/models/kenney/steps.glb" id="18_1aay1"]
+[ext_resource type="PackedScene" uid="uid://ykpld1a0qhbp" path="res://assets/models/kenney/structure-platform.glb" id="19_g8moq"]
+[ext_resource type="PackedScene" uid="uid://b0vjf1cemvej1" path="res://assets/models/kenney/structure-wood.glb" id="20_0d07q"]
+
+[node name="KenneySkateTiles" type="Node3D"]
+
+[node name="bowl-corner-inner2" parent="." instance=ExtResource("1_bx7mh")]
+
+[node name="bowl-corner-outer2" parent="." instance=ExtResource("2_popbr")]
+visible = false
+
+[node name="bowl-side2" parent="." instance=ExtResource("3_uwb15")]
+visible = false
+
+[node name="character-skate-boy2" parent="." instance=ExtResource("4_sgwvy")]
+visible = false
+
+[node name="character-skate-girl2" parent="." instance=ExtResource("5_20vd5")]
+visible = false
+
+[node name="floor-concrete2" parent="." instance=ExtResource("6_uf8jr")]
+visible = false
+
+[node name="floor-wood2" parent="." instance=ExtResource("7_8yk8u")]
+visible = false
+
+[node name="half-pipe2" parent="." instance=ExtResource("8_hsuuy")]
+visible = false
+
+[node name="obstacle-box2" parent="." instance=ExtResource("9_b0mgt")]
+visible = false
+
+[node name="obstacle-end2" parent="." instance=ExtResource("10_37v85")]
+visible = false
+
+[node name="obstacle-middle2" parent="." instance=ExtResource("11_asj4f")]
+visible = false
+
+[node name="pallet2" parent="." instance=ExtResource("12_vt3d8")]
+visible = false
+
+[node name="rail-curve2" parent="." instance=ExtResource("13_4ucsj")]
+visible = false
+
+[node name="rail-high2" parent="." instance=ExtResource("14_cnfnv")]
+visible = false
+
+[node name="rail-low2" parent="." instance=ExtResource("15_rywki")]
+visible = false
+
+[node name="rail-slope2" parent="." instance=ExtResource("16_0sqft")]
+visible = false
+
+[node name="skateboard2" parent="." instance=ExtResource("17_q1dxe")]
+visible = false
+
+[node name="steps2" parent="." instance=ExtResource("18_1aay1")]
+visible = false
+
+[node name="structure-platform2" parent="." instance=ExtResource("19_g8moq")]
+visible = false
+
+[node name="structure-wood2" parent="." instance=ExtResource("20_0d07q")]
+visible = false

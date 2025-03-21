@@ -16,10 +16,11 @@ sky = SubResource("Sky_ukcpi")
 [node name="test" type="Node"]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
+use_collision = true
 size = Vector3(100, 0.08, 100)
-
-[node name="CharacterBody3D" parent="." instance=ExtResource("1_alvft")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.262624, 0)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_u1lht")
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("1_alvft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.502188, 0)
