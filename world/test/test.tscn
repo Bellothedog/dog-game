@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://cx4mnxntgxv0l"]
+
+[ext_resource type="PackedScene" uid="uid://d0sx8phttlh8w" path="res://player/board.tscn" id="1_alvft"]
+[ext_resource type="Texture2D" uid="uid://dme06c086ql2h" path="res://world/test/texture_06.png" id="1_ujbsv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_37g75"]
+albedo_texture = ExtResource("1_ujbsv")
+uv1_scale = Vector3(30, 30, 30)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_i7k67"]
+sky_top_color = Color(0.792441, 0.830283, 0.883143, 1)
+sky_horizon_color = Color(0.725685, 0.733851, 0.746747, 1)
+
+[sub_resource type="Sky" id="Sky_ukcpi"]
+sky_material = SubResource("ProceduralSkyMaterial_i7k67")
+
+[sub_resource type="Environment" id="Environment_u1lht"]
+background_mode = 2
+sky = SubResource("Sky_ukcpi")
+
+[node name="test" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+use_collision = true
+size = Vector3(100, 0.08, 100)
+material = SubResource("StandardMaterial3D_37g75")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_u1lht")
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("1_alvft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.222826, 0)
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, -0.740531, 4.39986)

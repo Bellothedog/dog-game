@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6hul51yrxnco"
-path.s3tc="res://.godot/imported/drum.jpg-257132dc3eb1ab0277c4b3279e76d3a8.s3tc.ctex"
+uid="uid://buucgsxrh1det"
+path.s3tc="res://.godot/imported/dawg.png-467223bda960fc4ac3771e15331b5fee.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/textures/fabric/drum.jpg"
-dest_files=["res://.godot/imported/drum.jpg-257132dc3eb1ab0277c4b3279e76d3a8.s3tc.ctex"]
+source_file="res://player/textures/dawg.png"
+dest_files=["res://.godot/imported/dawg.png-467223bda960fc4ac3771e15331b5fee.s3tc.ctex"]
 
 [params]
 
