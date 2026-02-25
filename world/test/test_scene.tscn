@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://c71uf3i2ci1go"]
+
+[ext_resource type="Texture2D" uid="uid://qsv2ixwby0i0" path="res://addons/kenney_prototype_textures/dark/texture_08.png" id="1_ubpvf"]
+[ext_resource type="PackedScene" uid="uid://bh6uy4xwr4rlv" path="res://player/dog.tscn" id="2_g4734"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g4734"]
+albedo_texture = ExtResource("1_ubpvf")
+uv1_scale = Vector3(100, 100, 100)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_g4734"]
+
+[sub_resource type="Sky" id="Sky_lys30"]
+sky_material = SubResource("ProceduralSkyMaterial_g4734")
+
+[sub_resource type="Environment" id="Environment_g4734"]
+background_mode = 2
+sky = SubResource("Sky_lys30")
+
+[node name="Node3D" type="Node3D" unique_id=724398242]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1557741258]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+size = Vector3(100, 0.1, 100)
+material = SubResource("StandardMaterial3D_g4734")
+
+[node name="dog" parent="." unique_id=1539114747 instance=ExtResource("2_g4734")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=357096274]
+environment = SubResource("Environment_g4734")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=284309846]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
