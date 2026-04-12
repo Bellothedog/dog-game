@@ -27,6 +27,7 @@ func _input(event: InputEvent) -> void:
 
 
 func _unhandled_input(event: InputEvent) -> void:
+	# NOTE: For joystick support, use Input.get_axis() w/ controller joystick mappings
 	var is_camera_motion := (
 		event is InputEventMouseMotion and
 		Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED

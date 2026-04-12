@@ -1,9 +1,9 @@
 [gd_scene format=4 uid="uid://bh6uy4xwr4rlv"]
 
 [ext_resource type="Script" uid="uid://b7recxiyk4i6k" path="res://player/dog.gd" id="1_fhvil"]
-[ext_resource type="Animation" uid="uid://cgkyaef0ifa88" path="res://player/animation/walk.anim" id="2_fhvil"]
+[ext_resource type="Animation" uid="uid://cme7qjdwbousd" path="res://player/animation/walk.anim" id="2_fhvil"]
 [ext_resource type="Texture2D" uid="uid://gl0ua5l57lot" path="res://player/dawg-simplified_Material Base Color.png" id="2_rr7u7"]
-[ext_resource type="Animation" uid="uid://com2mcxlbv6ns" path="res://player/animation/idle.anim" id="3_41syx"]
+[ext_resource type="Animation" uid="uid://ba5fog4yskdjn" path="res://player/animation/idle.anim" id="3_41syx"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qwesq"]
 resource_name = "Material"
@@ -3904,7 +3904,7 @@ _data = {
 }
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rr7u7"]
-size = Vector3(0.19848633, 0.6934204, 0.81469727)
+size = Vector3(0.19702148, 0.6937256, 0.7863159)
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_rr7u7"]
 radius = 0.2
@@ -7423,7 +7423,7 @@ libraries/ = SubResource("AnimationLibrary_ob1yh")
 speed_scale = 4.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1805450708]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0008544922, 0.34579468, 0.06384277)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00048827863, 0.34707642, 0.07589722)
 shape = SubResource("BoxShape3D_rr7u7")
 
 [node name="CameraPivot" type="Node3D" parent="." unique_id=1323380900]
@@ -7433,7 +7433,7 @@ transform = Transform3D(1, 3.783467e-08, -8.611107e-09, -3.783467e-08, 0.9015004
 [node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot" unique_id=1220559787]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
 shape = SubResource("SphereShape3D_rr7u7")
-spring_length = 2.0
+spring_length = 3.0
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot/SpringArm3D" unique_id=1049095959]
 unique_name_in_owner = true

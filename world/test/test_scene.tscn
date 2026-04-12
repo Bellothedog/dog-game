@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c71uf3i2ci1go"]
 
-[ext_resource type="Texture2D" uid="uid://qsv2ixwby0i0" path="res://addons/kenney_prototype_textures/dark/texture_08.png" id="1_ubpvf"]
 [ext_resource type="PackedScene" uid="uid://bh6uy4xwr4rlv" path="res://player/dog.tscn" id="2_g4734"]
+[ext_resource type="Material" uid="uid://1808boygtmy5" path="res://addons/kenney_prototype_textures/light_xhairs.tres" id="2_lys30"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_g4734"]
 
@@ -11,18 +11,6 @@ sky_material = SubResource("ProceduralSkyMaterial_g4734")
 [sub_resource type="Environment" id="Environment_g4734"]
 background_mode = 2
 sky = SubResource("Sky_lys30")
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_ubpvf"]
-size = Vector3(20, 0.01, 20)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g4734"]
-albedo_texture = ExtResource("1_ubpvf")
-uv1_scale = Vector3(15, 15, 15)
-uv2_scale = Vector3(15, 15, 15)
-
-[sub_resource type="BoxMesh" id="BoxMesh_g4734"]
-material = SubResource("StandardMaterial3D_g4734")
-size = Vector3(20, 0.01, 20)
 
 [node name="Node3D" type="Node3D" unique_id=724398242]
 
@@ -35,10 +23,8 @@ environment = SubResource("Environment_g4734")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=284309846]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=128225575]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=302732562]
-shape = SubResource("BoxShape3D_ubpvf")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1598978686]
-mesh = SubResource("BoxMesh_g4734")
+[node name="Floor" type="CSGBox3D" parent="." unique_id=582791080]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+use_collision = true
+size = Vector3(12, 0.5, 12)
+material = ExtResource("2_lys30")
